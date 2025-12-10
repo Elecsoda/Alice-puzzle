@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>蚂蚁Alice历险记 - 移动适配版</title>
+    <title>蚂蚁Alice历险记 - @孙维刚教育研究院</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         body {
@@ -155,8 +155,9 @@
                     <button id="btnReplay" class="flex-1 bg-amber-100 hover:bg-amber-200 active:bg-amber-300 text-amber-800 font-bold py-2 px-1 rounded transition text-xs md:text-sm">
                         ↺ 重播
                     </button>
-                    <button id="btnToggle" class="flex-1 bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold py-2 px-2 rounded transition shadow-lg shadow-blue-200 text-xs md:text-sm">
-                        开始
+                    <!-- Made button larger: increased padding (py-3), font size (text-base md:text-lg) and flex-grow -->
+                    <button id="btnToggle" class="flex-[2] bg-blue-600 hover:bg-blue-700 active:bg-blue-800 text-white font-bold py-3 px-4 rounded-lg transition shadow-lg shadow-blue-200 text-base md:text-xl">
+                        开始模拟
                     </button>
                 </div>
                 <div class="pt-1 md:pt-2">
@@ -352,7 +353,8 @@
                 // Draw ID (Start from 1)
                 if (showIds && this.isOnRod) { 
                    ctx.fillStyle = '#475569';
-                   ctx.font = 'bold 12px monospace';
+                   // Increased font size from 12px to 24px
+                   ctx.font = 'bold 24px monospace';
                    ctx.textAlign = 'center';
                    // Draw above ant
                    ctx.fillText(this.id + 1, 0, -60);
